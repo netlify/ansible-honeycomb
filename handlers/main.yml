@@ -1,0 +1,3 @@
+---
+2	- name: Restart honeytail
+3	  service: name=honeytail state=restarted

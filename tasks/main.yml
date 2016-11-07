@@ -1,0 +1,7 @@
+- name: Download honeytail
+  get_url: url=https://honeycomb.io/download/honeytail/linux/{{ honeytail_version }} dest=/usr/local/bin/honeytail checksum={{ honeytail_checksum }} mode=0755
+
+- name: Configure honeytail service definition
+  template: src=honeytail.conf.j2 dest=/etc/init/honeytail.conf
+  notify:
+    - Restart honeytail

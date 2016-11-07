@@ -1,0 +1,9 @@
+description "Monitor log files and send data to Honeycomb"
+start on runlevel [2345]
+stop on runlevel [!2345]
+
+respawn
+
+script
+  exec /usr/local/bin/honeytail --writekey={{ honeytail_token }} {{ honeytail_flags }}
+end script
