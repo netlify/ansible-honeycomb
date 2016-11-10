@@ -1,5 +1,5 @@
 ---
-honeytail_version: "1.222"
-honeytail_checksum: "sha256:473dfda1537c1308942d591d77a84822aedc2f408c0b99631eab6bf26b016d7d"
+honeytail_version: "1.259"
+honeytail_checksum: "sha256:14b18d4a7c16b0af9bdbb645a8d5649192a5fc863140c7ffa1c74317f1b5f900"
 
 honeytail_flags: "--scrub_field=query"
